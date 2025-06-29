@@ -7,11 +7,6 @@ namespace Blackrazor.Initiative
     public interface IEffect
     {
         /// <summary>
-        /// The unique GUID associated with the <see cref="IEffect"/>
-        /// </summary>
-        public Guid ID { get; }
-
-        /// <summary>
         /// The display name of this <see cref="IEffect"/>
         /// </summary>
         public string DisplayName { get; set; }
@@ -22,7 +17,7 @@ namespace Blackrazor.Initiative
         public string Description { get; set; }
 
         /// <summary>
-        /// The remaining number of turns before this <see cref="EffectEntity"/>
+        /// The remaining number of turns before this <see cref="Effect"/>
         /// </summary>
         public int Duration { get; set; }
     }

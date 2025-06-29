@@ -8,11 +8,6 @@ namespace Blackrazor.Initiative
     public interface IOrder : IEnumerable<IPosition>
     {
         /// <summary>
-        /// The unique GUID associated with the <see cref="IOrder"/>
-        /// </summary>
-        public Guid ID { get; }
-
-        /// <summary>
         /// The display name of this <see cref="IOrder"/>
         /// </summary>
         public string DisplayName { get; set; }

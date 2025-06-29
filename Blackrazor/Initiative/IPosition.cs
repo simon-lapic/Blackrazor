@@ -7,11 +7,6 @@ namespace Blackrazor.Initiative
     public interface IPosition : IComparable<IPosition>
     {
         /// <summary>
-        /// The unique GUID associated with the <see cref="IPosition"/>
-        /// </summary>
-        public Guid ID { get; }
-
-        /// <summary>
         /// The display name of this <see cref="IPosition"/>
         /// </summary>
         public string DisplayName { get; set; }
