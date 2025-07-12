@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackrazor", "Blackrazor\Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{EF80C4A7-28FC-4783-88DB-DD8D5966A9B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitiativeConsole", "InitiativeConsole\InitiativeConsole.csproj", "{1565E8D7-EEFA-4F6A-9751-FF16D8C25BC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{06D82DB8-E736-4B86-94BD-A1DA68D74064}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{EF80C4A7-28FC-4783-88DB-DD8D5966A9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF80C4A7-28FC-4783-88DB-DD8D5966A9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF80C4A7-28FC-4783-88DB-DD8D5966A9B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1565E8D7-EEFA-4F6A-9751-FF16D8C25BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1565E8D7-EEFA-4F6A-9751-FF16D8C25BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1565E8D7-EEFA-4F6A-9751-FF16D8C25BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1565E8D7-EEFA-4F6A-9751-FF16D8C25BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D82DB8-E736-4B86-94BD-A1DA68D74064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D82DB8-E736-4B86-94BD-A1DA68D74064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D82DB8-E736-4B86-94BD-A1DA68D74064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D82DB8-E736-4B86-94BD-A1DA68D74064}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
