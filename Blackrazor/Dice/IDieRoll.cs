@@ -34,6 +34,13 @@
         public int Roll();
 
         /// <summary>
+        /// Rolls the dice, and sets the value of <paramref name="rollString"/> 
+        /// to the result of the roll
+        /// </summary>
+        /// <returns></returns>
+        public int Roll(out string rollString);
+
+        /// <summary>
         /// Sets the value of each die in the die roll 
         /// </summary>
         /// <param name="dieValues"></param>

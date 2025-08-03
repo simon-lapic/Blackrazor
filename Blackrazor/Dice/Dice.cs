@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Blackrazor.Utils
 {
+    [Obsolete]
     public class Dice
     {
         /// <summary>
@@ -53,12 +54,12 @@ namespace Blackrazor.Utils
         /// <summary>
         /// The result of the roll
         /// </summary>
-        public int Value { get; private set; }
+        public int Value { get; protected set; }
 
         /// <summary>
         ///  A string representation of the deice result
         /// </summary>
-        public string Result { get; private set; }
+        public string Result { get; protected set; }
 
         /// <summary>
         /// Constructs a new <see cref="Utils.Dice"/> object
