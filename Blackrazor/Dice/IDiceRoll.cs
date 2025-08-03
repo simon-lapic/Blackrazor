@@ -1,10 +1,12 @@
-﻿namespace Blackrazor.Utils
+﻿using System;
+
+namespace Blackrazor.Dice
 {
     /// <summary>
     /// An interface that can be implemented to represent an object that 
     /// can store, roll, and reroll a set of dice
     /// </summary>
-    public interface IDieRoll
+    public interface IDiceRoll : IFormattable
     {
         /// <summary>
         /// True if the die roll value is negated when calculated 
@@ -20,12 +22,12 @@
         /// <summary>
         /// The last result of rolling the dice
         /// </summary>
-        public int Value { get; }
+        public int Result { get; }
 
         /// <summary>
         /// A string representation of the last result of rolling the dice
         /// </summary>
-        public string ValueString { get; }
+        public string ResultString { get; }
 
         /// <summary>
         /// Rolls the dice
@@ -41,10 +43,13 @@
         public int Roll(out string rollString);
 
         /// <summary>
-        /// Sets the value of each die in the die roll 
+        /// Returns a string representation of the <see cref="IDiceRoll"/>
         /// </summary>
-        /// <param name="dieValues"></param>
+        /// <param name="includeResult">
+        /// True if the string representation should include the last result of 
+        /// rolling the dice, otherwise false
+        /// </param>
         /// <returns></returns>
-        public int SetRoll(params int[] dieValues);
+        public string ToString(bool includeResult);
     }
 }
