@@ -1,35 +1,25 @@
 ﻿using Blackrazor.Utils;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit.Abstractions;
 
 namespace Blackrazor.Tests.Utils
 {
-    public class RollTests
+    public class RollTests(ITestOutputHelper output)
     {
-        public static IEnumerable<object[]> RollStrings = new List<object[]>
+        public static TheoryData<string> RollStrings => new()
         {
-            new object[] { "1d20" },
-            new object[] { "2d20" },
-            new object[] { "+1d20" },
-            new object[] { "-1d20" },
-            new object[] { "1d20+1" },
-            new object[] { "1d20-1" },
-            new object[] { "1d20+1d10" },
-            new object[] { "1d20-1d10" },
-            new object[] { "1d20+1d10+1" },
-            new object[] { "3d20+4d10+10-4" },
+            "1d20",
+            "2d20",
+            "+1d20",
+            "-1d20",
+            "1d20+1",
+            "1d20-1",
+            "1d20+1d10",
+            "1d20-1d10",
+            "1d20+1d10+1",
+            "3d20+4d10+10-4",
         };
 
-        private readonly ITestOutputHelper Output;
-
-        public RollTests(ITestOutputHelper output)
-        {
-            this.Output = output;
-        }
+        private ITestOutputHelper Output { get; } = output;
 
         [Theory(DisplayName = "Constructor")]
         [MemberData(nameof(RollStrings))]
