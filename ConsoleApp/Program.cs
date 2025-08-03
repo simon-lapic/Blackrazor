@@ -9,9 +9,7 @@ namespace Blackrazor.CLI
     public class Program
     {
         private static Type[] LoadVerbs()
-            => Assembly.GetExecutingAssembly().GetTypes()
-                .Where(t => t.GetCustomAttribute<VerbAttribute>() is not null)
-                .ToArray();
+            => [.. Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetCustomAttribute<VerbAttribute>() is not null)];
 
         private static void DisplayHelp<T>(ParserResult<T> result)
         {

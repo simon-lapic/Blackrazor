@@ -1,5 +1,4 @@
-﻿using Blackrazor.Utils;
-using CommandLine;
+﻿using CommandLine;
 
 namespace Blackrazor.CLI.Verbs
 {
@@ -10,7 +9,7 @@ namespace Blackrazor.CLI.Verbs
         /// </summary>
         /// <param name="options"></param>
         public void Execute(RollVerbOptions options)
-            => Console.WriteLine($"Result: {new Dice(options.DiceString).Result}");
+            => Console.WriteLine($"Result: {new Dice.Dice(options.DiceString).Result}");
     }
 
     [Verb("roll", aliases: ["r"], HelpText = "Rolls a set of dice and prints the result of the roll")]

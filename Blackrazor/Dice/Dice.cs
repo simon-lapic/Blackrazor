@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 
-namespace Blackrazor.Utils
+namespace Blackrazor.Dice
 {
     [Obsolete]
     public class Dice
